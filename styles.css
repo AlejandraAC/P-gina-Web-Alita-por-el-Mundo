@@ -14,3 +14,8 @@ body {
     align-items: center; /* Alinea verticalmente los elementos al centro */
     padding: 10px 20px; /* Añade espacio alrededor del contenido dentro del navbar */
 }
+
+.logo {
+    height: 40px; /* Define la altura de la imagen del logo */
+    margin-right: 20px; /* Añade espacio a la derecha del logo */
+}
