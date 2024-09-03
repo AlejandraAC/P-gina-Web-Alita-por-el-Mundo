@@ -1,140 +1,21 @@
-/* Reset de márgenes y selección de fuente */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Elimina el margen predeterminado del body */
+    font-family: Arial, sans-serif; /* Establece la fuente para todo el documento */
 }
 
-/* Estilos generales del header */
 .header {
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0; /* Línea debajo de la barra de navegación */
+    background-color: white;
+    border-bottom: 1px solid white; /* Línea inferior sutil para separar el encabezado del contenido */
 }
 
-/* Contenedor principal de la barra de navegación */
-.navbar {
-    display: flex; /* Permite la disposición en fila de los elementos hijos */
-    align-items: center; /* Alinea verticalmente los elementos en el centro */
-    justify-content: space-between; /* Distribuye los elementos equitativamente en la barra */
+.navbar{
+    justify-content: space-between; /* Espacia los elementos en la barra de navegación */
+    display: flex; /* Utiliza Flexbox para alinear los elementos en el navbar */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
     padding: 10px 20px; /* Añade espacio alrededor del contenido dentro del navbar */
 }
 
-/* Estilo de la imagen del logo */
 .logo {
-    height: 40px;
-    margin-right: 20px; /* Espacio a la derecha del logo */
+    height: 40px; /* Define la altura de la imagen del logo */
+    margin-right: 20px; /* Añade espacio a la derecha del logo */
 }
-
-/* Estilo de la lista de navegación */
-.nav-menu {
-    display: flex; /* Muestra los elementos de la lista en línea horizontal */
-    list-style: none; /* Elimina los puntos de la lista */
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo de los elementos de la lista de navegación */
-.nav-menu li {
-    margin-right: 20px; /* Espacio entre los elementos del menú */
-}
-
-/* Estilo de los enlaces de la lista de navegación */
-.nav-menu a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #333; /* Color del texto */
-    font-weight: bold; /* Texto en negrita */
-}
-
-/* Contenedor de la barra de búsqueda */
-.search-bar {
-    flex-grow: 1; /* Permite que la barra de búsqueda crezca para ocupar espacio */
-    display: flex;
-    align-items: center;
-    position: relative; /* Posiciona la lupa dentro del contenedor */
-    margin-right: 20px; /* Espacio a la derecha de la barra de búsqueda */
-}
-
-/* Estilo del campo de entrada de búsqueda */
-.search-bar input {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 8px 35px 8px 10px; /* Espacio interior del campo de búsqueda */
-    border: 1px solid #e0e0e0; /* Borde del campo de búsqueda */
-    border-radius: 4px; /* Esquinas redondeadas */
-    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho */
-}
-
-/* Estilo del icono de lupa en la barra de búsqueda */
-.search-icon {
-    position: absolute; /* Posiciona la lupa dentro del contenedor */
-    right: 10px; /* Alinea la lupa a la derecha */
-    color: #999;
-    font-size: 18px;
-}
-
-/* Contenedor para el botón de inicio de sesión */
-.login-container {
-    position: relative; /* Permite que el menú desplegable se posicione relativo al botón */
-}
-
-/* Estilo del botón de inicio de sesión */
-.login-btn {
-    background-color: #db0011; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 8px 16px; /* Espacio interior del botón */
-    border: none; /* Elimina el borde por defecto */
-    border-radius: 4px; /* Esquinas redondeadas */
-    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
-    font-weight: bold; /* Texto en negrita */
-}
-
-/* Estilo del menú desplegable */
-.dropdown-content {
-    display: none; /* Inicialmente oculto */
-    position: absolute;
-    right: 0;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra para el menú desplegable */
-    z-index: 1; /* Asegura que el menú esté por encima de otros elementos */
-}
-
-/* Estilo de los enlaces dentro del menú desplegable */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block; /* Muestra los enlaces en bloque */
-}
-
-/* Muestra el menú desplegable al pasar el cursor sobre el contenedor */
-.login-container:hover .dropdown-content {
-    display: block;
-}
-
-/* Estilo del menú hamburguesa */
-.hamburger-menu {
-    display: none; /* Oculto por defecto, visible solo en pantallas pequeñas */
-    flex-direction: column; /* Coloca las líneas del menú una debajo de otra */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-}
-
-/* Estilo de las líneas del menú hamburguesa */
-.hamburger-menu span {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0; /* Espacio entre las líneas */
-    transition: 0.4s; /* Transición suave al cambiar el menú */
-}
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none; /* Oculta el menú de navegación en pantallas pequeñas */
-    }
-
-    .hamburger-menu {
-        display: flex; /* Muestra el menú hamburguesa */
-    }
-
-    .navbar {
-        justify-content: flex-start; /* Alinea el contenido al inicio de la bar
