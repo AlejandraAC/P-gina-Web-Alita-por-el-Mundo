@@ -7,3 +7,8 @@ body {
     background-color: white;
     border-bottom: 1px solid white; /* Línea inferior sutil para separar el encabezado del contenido */
 }
+
+.navbar{
+    display: flex; /* Utiliza Flexbox para alinear los elementos en el navbar */
+
+}
