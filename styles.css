@@ -12,4 +12,5 @@ body {
     justify-content: space-between; /* Espacia los elementos en la barra de navegación */
     display: flex; /* Utiliza Flexbox para alinear los elementos en el navbar */
     align-items: center; /* Alinea verticalmente los elementos al centro */
+    padding: 10px 20px; /* Añade espacio alrededor del contenido dentro del navbar */
 }
