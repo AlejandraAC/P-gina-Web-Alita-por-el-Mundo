@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HSBC - Navbar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>HSBC Navbar Clone</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
 </head>
-
 <body>
-
-    <!-- Barra de Navegación -->
     <header class="header">
         <nav class="navbar">
-            <!-- Enlace para redirigir a la página de inicio -->
-            <a href="index.html">
-                <img src="logo-hsbc.png" alt="Logo HSBC" class="logo">
+            <!-- Menú hamburguesa para pantallas pequeñas -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Logo de HSBC -->
+            <a href="#" class="logo">
+                <img src="hsbc-logo.png" alt="HSBC Logo"> <!-- Imagen del logo de HSBC -->
             </a>
-            <!-- Lista desordenada de navegación -->
+            <!-- Menú de navegación principal -->
             <ul class="nav-menu">
                 <li><a href="#">Insights</a></li>
                 <li><a href="#">Productos y Soluciones</a></li>
                 <li><a href="#">Centro de Soporte</a></li>
                 <li><a href="#">Contacto HSBC</a></li>
             </ul>
-            <!-- Barra de búsqueda con un campo de texto y un icono de lupa -->
+            <!-- Barra de búsqueda -->
             <div class="search-bar">
-                <input type="text" placeholder="Buscar...">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                </svg>
+                <input type="text" placeholder="Buscar..."> <!-- Campo de entrada de búsqueda -->
+                <!-- Icono de lupa para la búsqueda -->
+                <span class="search-icon">&#128269;</span>
             </div>
-            <!-- Contenedor del botón de iniciar sesión -->
+            <!-- Botón de inicio de sesión con menú desplegable -->
             <div class="login-container">
-                <!-- Botón rojo de iniciar sesión -->
                 <button class="login-btn">Iniciar Sesión</button>
-                <!-- Menú desplegable que aparece al pasar el ratón sobre el botón de iniciar sesión -->
+                <!-- Contenido del menú desplegable -->
                 <div class="dropdown-content">
                     <a href="#">Mi cuenta</a>
-                    <a href="#">Salir</a>
+                    <a href="#">Cerrar sesión</a>
                 </div>
             </div>
-            <!-- Menú hamburguesa que aparece en pantallas pequeñas -->
-             <div class="hamburguer-menu">
-                <!-- Líneas que forman el icono del menú hamburguesa -->
-                <span></span>
-                <span></span>
-                <span></span>
-             </div>
         </nav>
     </header>
-    <script src="script.js"></script>
-</body>
 
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript externo -->
+</body>
 </html>
