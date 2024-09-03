@@ -1,13 +1,7 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita el envío del formulario para manejarlo manualmente
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu');
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    if(username === "" || password === "") {
-        alert("Por favor, completa todos los campos.");
-    } else {
-        alert("Inicio de sesión exitoso");
-        // Aquí podrías redirigir a otra página o realizar alguna otra acción
-    }
+hamburgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
 });
+
